@@ -1,0 +1,47 @@
+#root {
+    width: 100%;
+}
+
+#row-navbar-styles {
+    background-color: #fff159 ;
+    height: auto;
+    padding: 0.5em 2em;
+}
+
+.nav-link{
+    font-size: 14px;
+    color: #33333399;
+    font-weight: 400;
+}
+
+#col-reset-side-pad {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#cont-reset-side-pad{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#just-end-to-center-nowrap {
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+#just-start-nowrap {
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+@media (min-width: 1200px) {
+    #just-end-to-center-nowrap {
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+    
+    #just-start-nowrap {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+}

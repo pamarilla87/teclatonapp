@@ -1,0 +1,25 @@
+.nav-logo {
+    height: 50px;
+    width: auto;
+}
+
+.searchBarText {
+    align-items: center;
+    background-color: #fff159 ;
+    color: #33333399;
+    text-align: center;
+    justify-content: center;
+}
+
+#offer-just {
+    padding-top: 1em;
+    font-weight: 500;
+}
+
+
+@media (min-width: 992px) {
+    #offer-just {
+        padding-top: 0px;
+    }
+    
+}

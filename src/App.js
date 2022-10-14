@@ -1,11 +1,12 @@
 import React from 'react';
+import NavBar from './components/NavBar';
+import SearchBar from './components/SearchBar';
 
 function App() {
   return (
     <>
-        <header>
-            <h1>Teclaton</h1>
-        </header>
+        <SearchBar />
+        <NavBar/>
     </>
 
   )
