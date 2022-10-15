@@ -10,13 +10,13 @@ import Col from 'react-bootstrap/Col';
 
 function SearchBar() {
     return (
-        <Container fluid >
+        <Container fluid id="cont-bg">
             <Row className="searchBarText">
-                <Col md={12} lg={3} >
+                <Col sm={12} lg={3} >
                     <img src={logo} className="nav-logo" alt="logo temporario" />
                     Teclaton Store
                 </Col>
-                <Col md={6} lg={6} >
+                <Col sm={6} lg={6} >
                     <Form className="d-flex">
                         <Form.Control
                             type="search"
@@ -26,7 +26,7 @@ function SearchBar() {
                         />
                     </Form>
                 </Col>
-                <Col md={12} lg={3}  id="offer-just">
+                <Col sm={12} lg={3}  id="offer-just">
                     Ofertas por tiempo limitado!
                 </Col>
             </Row>

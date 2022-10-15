@@ -7,7 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import SearchBar from './SearchBar'
 import './NavBar.css'
 
-function NavBar() {
+const NavBar = ({name}) => {
     return (
         <>
             <Container fluid id="cont-reset-side-pad">
@@ -30,7 +30,7 @@ function NavBar() {
                         </Col>
                         <Col md={12} xl={5}>
                             <Nav id="just-end-to-center-nowrap">
-                                <Nav.Link href="#" >Hola Pablo!</Nav.Link>
+                                <Nav.Link href="#" >Hola {name}!</Nav.Link>
                                 <Nav.Link href="#" >Mis Compras</Nav.Link>
                                 <Nav.Link href="#" >Favoritos</Nav.Link>
                                 <Nav.Link href="#" >Carrito</Nav.Link>

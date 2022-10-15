@@ -3,6 +3,12 @@
     width: auto;
 }
 
+#cont-bg {
+    background-color: #fff159 ; 
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .searchBarText {
     align-items: center;
     background-color: #fff159 ;
