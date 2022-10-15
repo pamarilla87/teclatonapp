@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/teclatonapp/static/css/main.10646292.css",
-    "main.js": "/teclatonapp/static/js/main.a0fed223.js",
+    "main.css": "/teclatonapp/static/css/main.fe220e46.css",
+    "main.js": "/teclatonapp/static/js/main.1835acf9.js",
+    "static/media/Proxima-Nova.otf": "/teclatonapp/static/media/Proxima-Nova.7bc9ce404c297c24f210.otf",
     "static/media/logo.svg": "/teclatonapp/static/media/logo.b43b9137629198e64021381eb993d9d4.svg",
     "index.html": "/teclatonapp/index.html",
-    "main.10646292.css.map": "/teclatonapp/static/css/main.10646292.css.map",
-    "main.a0fed223.js.map": "/teclatonapp/static/js/main.a0fed223.js.map"
+    "main.fe220e46.css.map": "/teclatonapp/static/css/main.fe220e46.css.map",
+    "main.1835acf9.js.map": "/teclatonapp/static/js/main.1835acf9.js.map"
   },
   "entrypoints": [
-    "static/css/main.10646292.css",
-    "static/js/main.a0fed223.js"
+    "static/css/main.fe220e46.css",
+    "static/js/main.1835acf9.js"
   ]
 }
