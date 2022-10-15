@@ -7,7 +7,8 @@ import CartWidget from './CartWidget';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './NavBar.css'
 
-const NavBar = ({nombre}) => {
+const NavBar = (props) => {
+    const {nombre="Invitado"} = props
     return (
         <>
             <Container fluid id="cont-reset-side-pad">
