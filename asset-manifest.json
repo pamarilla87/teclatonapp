@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/teclatonapp/static/css/main.199ac559.css",
-    "main.js": "/teclatonapp/static/js/main.2e34d70b.js",
+    "main.css": "/teclatonapp/static/css/main.e15fa872.css",
+    "main.js": "/teclatonapp/static/js/main.87de3f67.js",
     "static/media/logo.svg": "/teclatonapp/static/media/logo.9b355a17f6aed9fe79ea072fae885807.svg",
     "index.html": "/teclatonapp/index.html",
-    "main.199ac559.css.map": "/teclatonapp/static/css/main.199ac559.css.map",
-    "main.2e34d70b.js.map": "/teclatonapp/static/js/main.2e34d70b.js.map"
+    "main.e15fa872.css.map": "/teclatonapp/static/css/main.e15fa872.css.map",
+    "main.87de3f67.js.map": "/teclatonapp/static/js/main.87de3f67.js.map"
   },
   "entrypoints": [
-    "static/css/main.199ac559.css",
-    "static/js/main.2e34d70b.js"
+    "static/css/main.e15fa872.css",
+    "static/js/main.87de3f67.js"
   ]
 }
