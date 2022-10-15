@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/teclatonapp/static/css/main.fe220e46.css",
-    "main.js": "/teclatonapp/static/js/main.1835acf9.js",
+    "main.css": "/teclatonapp/static/css/main.429fff60.css",
+    "main.js": "/teclatonapp/static/js/main.97ea018a.js",
     "static/media/Proxima-Nova.otf": "/teclatonapp/static/media/Proxima-Nova.7bc9ce404c297c24f210.otf",
-    "static/media/logo.svg": "/teclatonapp/static/media/logo.b43b9137629198e64021381eb993d9d4.svg",
+    "static/media/logo.svg": "/teclatonapp/static/media/logo.512be93117ecd55b4aea202b9ade7ee7.svg",
     "index.html": "/teclatonapp/index.html",
-    "main.fe220e46.css.map": "/teclatonapp/static/css/main.fe220e46.css.map",
-    "main.1835acf9.js.map": "/teclatonapp/static/js/main.1835acf9.js.map"
+    "main.429fff60.css.map": "/teclatonapp/static/css/main.429fff60.css.map",
+    "main.97ea018a.js.map": "/teclatonapp/static/js/main.97ea018a.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe220e46.css",
-    "static/js/main.1835acf9.js"
+    "static/css/main.429fff60.css",
+    "static/js/main.97ea018a.js"
   ]
 }
