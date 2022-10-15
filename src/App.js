@@ -6,7 +6,7 @@ function App() {
   return (
     <>
         <SearchBar />
-        <NavBar nombre={'Nestor'}/>
+        <NavBar nombre="Pablo"/>
     </>
 
   )

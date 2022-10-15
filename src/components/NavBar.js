@@ -3,11 +3,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import CartWidget from './CartWidget';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import SearchBar from './SearchBar'
 import './NavBar.css'
 
-const NavBar = ({name}) => {
+const NavBar = ({nombre}) => {
     return (
         <>
             <Container fluid id="cont-reset-side-pad">
@@ -30,10 +30,10 @@ const NavBar = ({name}) => {
                         </Col>
                         <Col md={12} xl={5}>
                             <Nav id="just-end-to-center-nowrap">
-                                <Nav.Link href="#" >Hola {name}!</Nav.Link>
+                                <Nav.Link href="#" >Hola {nombre}!</Nav.Link>
                                 <Nav.Link href="#" >Mis Compras</Nav.Link>
                                 <Nav.Link href="#" >Favoritos</Nav.Link>
-                                <Nav.Link href="#" >Carrito</Nav.Link>
+                                <Nav.Link href="#" > <CartWidget productos="4"/> </Nav.Link>
                             </Nav>
                         </Col>
                     </Row>
