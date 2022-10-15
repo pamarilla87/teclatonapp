@@ -48,10 +48,13 @@
 
 .dropdown-item {
     color: #ffffff !important;
-    font-weight: 500 !important;
+    font-weight: bold !important;
     font-family: pros-nova;
     font-size: 13px;
-    
+}
+
+.dropdown-item:hover {
+    background-color: #3483fa !important;
 }
 
 @media (min-width: 1200px) {
