@@ -15,7 +15,7 @@ const NavBar = (props) => {
                     <Row id="row-navbar-styles">
                         <Col md={12} xl={7}>
                             <Nav id="just-start-nowrap">
-                                <NavDropdown title="Categorías" >
+                                <NavDropdown id="nav-dropdown-styles" title="Categorías" >
                                     <NavDropdown.Item href="#">Vehículos</NavDropdown.Item>
                                     <NavDropdown.Item href="#">Inmuebles</NavDropdown.Item>
                                     <NavDropdown.Item href="#">Supermercado</NavDropdown.Item>

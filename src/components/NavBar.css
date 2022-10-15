@@ -1,3 +1,8 @@
+@font-face {
+    font-family: pros-nova;
+    src: url(../fonts/Proxima-Nova.otf);
+}
+
 #root {
     width: 100%;
 }
@@ -5,7 +10,8 @@
 #row-navbar-styles {
     background-color: #fff159 ;
     height: auto;
-    padding: 0em 2em;
+    padding: 0.5em 2em;
+    font-family: pros-nova;
 }
 
 .nav-link{
@@ -33,6 +39,18 @@
 #just-start-nowrap {
     justify-content: center;
     flex-wrap: nowrap;
+}
+
+.dropdown-menu.show {
+    background: #333 !important;
+}
+
+.dropdown-item {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    font-family: pros-nova;
+    font-size: 13px;
+    
 }
 
 @media (min-width: 1200px) {
