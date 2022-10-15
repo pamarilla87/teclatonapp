@@ -5,7 +5,7 @@ import ItemListContainer from './components/ItemListContainer'
 
 function App() {
   return (
-    
+    // Move Search and NavBar to a single Header component
     <>
         <SearchBar />
         <NavBar nombre="Pablo"/>
