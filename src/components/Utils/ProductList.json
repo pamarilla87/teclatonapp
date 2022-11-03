@@ -6,6 +6,15 @@
     {"id": "5", "description" : "Disco Solido SSD M.2 Team 4TB Cardea Zero Z340 3400MB/s NVMe PCI-E x4", "categories": "storage", "price":"79.750", "stock":"10", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-5-general-1.jpg"},
     {"id": "6", "description" : "Disco Solido SSD M2 WD 2TB Black SN850X 7300MB/s NVMe PCIe Gen4 x4", "categories": "storage", "price":"73.500", "stock":"20", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-6-general-1.jpg"},
     {"id": "7", "description" : "Disco Solido SSD M.2 Team 2TB T-Create Classic 5000MB/s NVMe PCI-E Gen4", "categories": "storage", "price":"72.999", "stock":"15", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-7-general-1.jpg"},
-    {"id": "8", "description" : "Disco Solido SSD M.2 WD 1TB Green SN350 3200MB/s NVMe PCI-E Gen3 x4", "categories": "storage", "price":"19.690", "stock":"20", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-8-general-1.jpg"}
+    {"id": "8", "description" : "Disco Solido SSD M.2 WD 1TB Green SN350 3200MB/s NVMe PCI-E Gen3 x4", "categories": "storage", "price":"19.690", "stock":"20", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-8-general-1.jpg"},
+    {"id": "9", "description" : "Procesador Intel Core i5 11400F S1200 11th Gen Rocket Lake", "categories": "cpu", "price":"35.050", "stock":"20", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-9-general-1.jpg"},
+    {"id": "10", "description" : "Procesador Intel Core i3 12100 12th Gen S1700", "categories": "cpu", "price":"34.650", "stock":"20", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-10-general-1.jpg"},
+    {"id": "11", "description" : "Procesador Intel Core i7 10700KF 5.1GHz Turbo 1200 Comet Lake", "categories": "cpu", "price":"67.100", "stock":"20", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-11-general-1.jpg"},
+    {"id": "12", "description" : "Procesador Intel Core i7 10700 4.8GHz Turbo Socket 1200 Comet Lake", "categories": "cpu", "price":"72.050", "stock":"20", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-12-general-1.jpg"},
+    {"id": "13", "description" : "Procesador Intel Core i9-11900K 5.3GHz Turbo Socket 1200", "categories": "cpu", "price":"105.420", "stock":"20", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-13-general-1.jpg"},
+    {"id": "14", "description" : "Mother Gigabyte B560M AORUS ELITE S1200", "categories": "motherboards", "price":"34.200", "stock":"20", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-14-general-1.jpg"},
+    {"id": "15", "description" : "Mother ASUS PRIME Z690-P WIFI S1700", "categories": "motherboards", "price":"59.700", "stock":"20", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-15-general-1.jpg"},
+    {"id": "16", "description" : "Mother ASUS ROG MAXIMUS XIII EXTREME Z590 EATX", "categories": "motherboards", "price":"160.400", "stock":"20", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-16-general-1.jpg"},
+    {"id": "17", "description" : "Mother ASUS ROG MAXIMUS XIII EXTREME GLACIAL", "categories": "motherboards", "price":"298.750", "stock":"20", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-17-general-1.jpg"}
    
 ]

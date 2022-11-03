@@ -1,0 +1,15 @@
+@font-face {
+    font-family: pros-nova;
+    src: url(../../fonts/Proxima-Nova.otf);
+}
+
+main {
+    display: flex !important;
+    justify-content: center;
+}
+
+.ucCard {
+    margin-top: 2rem;
+    text-align: center;
+    font-family: pros-nova;
+}

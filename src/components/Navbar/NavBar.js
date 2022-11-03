@@ -24,8 +24,7 @@ const NavBar = (props) => {
                                 </NavDropdown>
                                 <Nav.Link as={Link} to="/products">Home</Nav.Link>
                                 <Nav.Link as={Link} to="/history">Historial</Nav.Link>
-                                <Nav.Link as={Link} to="/supermarket">Supermercado</Nav.Link>
-                                <Nav.Link as={Link} to="/fashion">Moda</Nav.Link>
+                                <Nav.Link as={Link} to="/offers">Ofertas</Nav.Link>
                                 <Nav.Link as={Link} to="/help">Ayuda</Nav.Link>
                             </Nav>
                         </Col>
