@@ -2,6 +2,7 @@ import React from 'react'
 import ItemListContainer from '../ItemListContainer/ItemListContainer'
 import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer'
 import UnderConstruction from '../UnderConstruction/UnderConstruction'
+import NotFound from '../NotFound/NotFound'
 import {Route, Routes} from "react-router-dom"
 import "./Main.css"
 
@@ -20,6 +21,8 @@ const Main = () => {
             <Route path='/help' element={<UnderConstruction />} />
             <Route path='/categories/:catId' element={<ItemListContainer />} />
             <Route path='/items/:itemId' element={<ItemDetailContainer />} />
+            <Route path='/items/:itemId' element={<ItemDetailContainer />} />
+            <Route path='*' element={<NotFound />} />
         </Routes>
     </main>
   )

@@ -6,6 +6,8 @@ import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Nav from 'react-bootstrap/Nav'
+import { Link } from 'react-router-dom';
 
 
 const SearchBar = () => {
@@ -13,8 +15,7 @@ const SearchBar = () => {
         <Container fluid id="cont-bg">
             <Row className="searchBarText">
                 <Col sm={12} lg={3} >
-                    <img src={logo} className="nav-logo" alt="logo temporario" />
-                    Teclaton Store
+                    <Nav.Link as={Link} to="/"><img  src={logo} className="nav-logo" alt="logo temporario" />Teclaton Store</Nav.Link>
                 </Col>
                 <Col sm={6} lg={6} >
                     <Form className="d-flex">
