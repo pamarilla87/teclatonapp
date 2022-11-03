@@ -20,8 +20,7 @@ const Main = () => {
             <Route path='/products' element={<ItemListContainer />} />
             <Route path='/help' element={<UnderConstruction />} />
             <Route path='/categories/:catId' element={<ItemListContainer />} />
-            <Route path='/items/:itemId' element={<ItemDetailContainer />} />
-            <Route path='/items/:itemId' element={<ItemDetailContainer />} />
+            <Route path='/item/:itemId' element={<ItemDetailContainer />} />
             <Route path='*' element={<NotFound />} />
         </Routes>
     </main>

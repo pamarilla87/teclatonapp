@@ -7,7 +7,7 @@ import { Card, Col, Button } from 'react-bootstrap'
 
 const CardItem = ({id, description, price, stock, img}) => {
 
-    const productDetailUrl = "../items/" + id
+    const productDetailUrl = "../item/" + id
 
     return (
         <Col xs={12} md={6} lg={3} xxl={2} className="itemsCols">
