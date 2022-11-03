@@ -1,0 +1,16 @@
+@font-face {
+    font-family: pros-nova;
+    src: url(../../fonts/Proxima-Nova.otf);
+}
+
+
+.botonAgregar {
+    background-color: #3483fa ;
+}
+
+.cardContainer {
+    display: flex;
+    width: 18rem;
+    text-align: center;
+    font-family: pros-nova;
+}

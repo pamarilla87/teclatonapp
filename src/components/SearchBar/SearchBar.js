@@ -1,14 +1,14 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './SearchBar.css'
-import logo from './logo.svg';
+import logo from '../logo.svg';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
-function SearchBar() {
+const SearchBar = () => {
     return (
         <Container fluid id="cont-bg">
             <Row className="searchBarText">

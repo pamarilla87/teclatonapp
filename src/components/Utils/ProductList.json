@@ -1,0 +1,11 @@
+[
+    {"id": "1", "description" : "Placa de Video Zotac GeForce RTX 3090 24GB GDDR6X Trinity", "categories":"videocard" ,"price":"380.000", "stock":"20", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-1-general-1.jpg"},
+    {"id": "2", "description" : "Placa de Video GALAX GeForce RTX 3080 Ti 12GB GDDR6X SG OC", "categories":"videocard" , "price":"264.000", "stock":"20", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-2-general-1.jpg"},
+    {"id": "3", "description" : "Placa de Video GALAX GeForce GTX 1660 Ti 6GB GDDR6 OC", "categories":"videocard" , "price":"67.000", "stock":"10", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-3-general-1.jpg"},
+    {"id": "4", "description" : "Placa de Video MSI GeForce RTX 3090 24GB GDDR6X VENTUS 3X OC", "categories":"videocard" , "price":"446.340", "stock":"10", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-4-general-1.jpg"},
+    {"id": "5", "description" : "Disco Solido SSD M.2 Team 4TB Cardea Zero Z340 3400MB/s NVMe PCI-E x4", "categories": "storage", "price":"79.750", "stock":"10", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-5-general-1.jpg"},
+    {"id": "6", "description" : "Disco Solido SSD M2 WD 2TB Black SN850X 7300MB/s NVMe PCIe Gen4 x4", "categories": "storage", "price":"73.500", "stock":"20", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-6-general-1.jpg"},
+    {"id": "7", "description" : "Disco Solido SSD M.2 Team 2TB T-Create Classic 5000MB/s NVMe PCI-E Gen4", "categories": "storage", "price":"72.999", "stock":"15", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-7-general-1.jpg"},
+    {"id": "8", "description" : "Disco Solido SSD M.2 WD 1TB Green SN350 3200MB/s NVMe PCI-E Gen3 x4", "categories": "storage", "price":"19.690", "stock":"20", "img":"https://d3vj05pclgk6ib.cloudfront.net/products/id-8-general-1.jpg"}
+   
+]

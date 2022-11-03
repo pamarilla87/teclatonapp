@@ -1,17 +1,15 @@
 import React from 'react';
-import NavBar from './components/NavBar';
-import SearchBar from './components/SearchBar';
-import ItemListContainer from './components/ItemListContainer'
+import Header from './components/Header/Header'
+import Main from './components/Main/Main';
+import {BrowserRouter} from "react-router-dom"
 
 function App() {
   return (
     // Move Search and NavBar to a single Header component
-    <>
-        <SearchBar />
-        <NavBar nombre="Pablo"/>
-        <ItemListContainer nombre="Pablo" />
-    </>
-
+    <BrowserRouter>
+      <Header />
+      <Main />
+    </BrowserRouter>
   )
 }
 
