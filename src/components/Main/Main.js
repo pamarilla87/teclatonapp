@@ -10,6 +10,7 @@ const Main = () => {
     <main>
         <Routes>
             <Route path='/' element={<ItemListContainer />} />
+            <Route path='/teclatonapp' element={<ItemListContainer />} />
             <Route path='/products' element={<ItemListContainer />} />
             <Route path='/help' element={<Help />} />
             <Route path='/categories/:catId' element={<ItemListContainer />} />

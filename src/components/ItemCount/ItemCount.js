@@ -4,7 +4,7 @@ import './ItemCount.css'
 import { Button, Form, } from 'react-bootstrap'
 import { useState } from 'react'
 
-export const ItemCount = ({stock, itemid}) => {
+const ItemCount = ({stock}) => {
     const [count, setCount] = useState(0);
 
     const handleDecrement = () => {
@@ -30,3 +30,5 @@ export const ItemCount = ({stock, itemid}) => {
         </>
     )
 }
+
+export default ItemCount

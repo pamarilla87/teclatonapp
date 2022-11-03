@@ -1,22 +1,26 @@
 import React from 'react'
-import {Card, Col} from 'react-bootstrap'
+import { Card, Col, Row } from 'react-bootstrap'
+import ItemCount from '../ItemCount/ItemCount'
+import './ItemDetails.css'
 
 
-const ItemDetails = (props) => {
-    console.table(props)
+const ItemDetails = ({ product }) => {
+
     return (
-        <Col  className="itemsCols">
-            {
-                <Card  className="cardContainer"  >
-                    <Card.Img variant="top" src={props.img} />
-                    <Card.Body>
-                        <Card.Title>$ {props.price}</Card.Title>
-                        <Card.Text>{props.description}</Card.Text>
-                        {/* <ItemCount /> */}
-                    </Card.Body>
-                </Card>
-            }
-        </Col>
+        <Row className="justify-content-md-center" >
+            <Col className="itemsCols">
+                {
+                    <Card className="cardContainer"  >
+                        <Card.Img variant="top" src={product.img} />
+                        <Card.Body>
+                            <Card.Title>$ {product.price}</Card.Title>
+                            <Card.Text>{product.description}</Card.Text>
+                            <ItemCount stock={product.stock} />
+                        </Card.Body>
+                    </Card>
+                }
+            </Col>
+        </Row>
     )
 }
 
