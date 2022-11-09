@@ -13,7 +13,6 @@ const ItemDetails = ({ product }) => {
     return (
         <Row className="justify-content-md-center" >
             <Col className="itemsCols">
-                {
                     <Card className="cardContainer"  >
                         <Card.Img variant="top" src={product.img} />
                         <Card.Body>
@@ -23,7 +22,6 @@ const ItemDetails = ({ product }) => {
                             <Button onClick={() => {addProductToCart(product, count)}} className="botonAgregar">Agregar al carrito</Button>
                         </Card.Body>
                     </Card>
-                }
             </Col>
         </Row>
     )
