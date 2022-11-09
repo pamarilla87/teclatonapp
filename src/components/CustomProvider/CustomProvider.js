@@ -5,6 +5,7 @@ const { Provider } = customContext
 
 export const CustomProvider = ({children}) => {
     const [carrito, setCarrito] = useState([])
+    const [count, setCount] = useState(0);
     
     useEffect(() => {
         console.table(carrito)
@@ -24,7 +25,7 @@ export const CustomProvider = ({children}) => {
         }
     }
 
-    const deleteProductFromCart = (product) => {
+    const updateProductFromCart = (product) => {
         const inCart = carrito.find((productInCart) => productInCart.id === product.id)
         if (inCart.amount === 1) {
             setCarrito(carrito.filter((productInCart) => productInCart.id !== product.id))
@@ -40,7 +41,7 @@ export const CustomProvider = ({children}) => {
 
 
     return (
-        <Provider value={{carrito, deleteProductFromCart, addProductToCart }}>
+        <Provider value={{carrito, updateProductFromCart, addProductToCart, count, setCount }}>
             {children}
         </Provider>
     )

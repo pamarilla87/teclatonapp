@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react'
+import React, {useContext} from 'react'
 import { Card, Col, Row, Button } from 'react-bootstrap'
 import ItemCount from '../ItemCount/ItemCount'
 import customContext from '../CustomProvider/CustomProvider'
@@ -6,8 +6,9 @@ import './ItemDetails.css'
 
 const ItemDetails = ({ product }) => {
 
-    const [count, setCount] = useState(1);
-    const {addProductToCart} = useContext(customContext)
+    // const [count, setCount] = useState(1);
+    // const {addProductToCart} = useContext(customContext)
+    const {addProductToCart, count} = useContext(customContext)
 
 
     return (
@@ -18,7 +19,7 @@ const ItemDetails = ({ product }) => {
                         <Card.Body>
                             <Card.Title>$ {product.price}</Card.Title>
                             <Card.Text>{product.description}</Card.Text>
-                            <ItemCount stock={product.stock} count={count} setCount= {setCount} />
+                            <ItemCount stock={product.stock} />
                             <Button onClick={() => {addProductToCart(product, count)}} className="botonAgregar">Agregar al carrito</Button>
                         </Card.Body>
                     </Card>
