@@ -1,29 +1,19 @@
 import Products from "../Utils/ProductList.json"
 
-export const fetchProducts = () => {
-    return new Promise((resolve) => {
+export const generatePromise = (task, time = 2000) => {
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(Products)
-        }, 2000)
+            resolve(task)
+        }, time)
     })
 }
 
+export const fetchProducts = () => generatePromise(Products)
+
 export const fetchProductsByCat = (cat) => {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(Products.filter((product => {
-                return product.categories === cat
-            })))
-        }, 2000)
-    })
+    return generatePromise(Products.filter(product => product.categories === cat))
 }
 
 export const fetchProductsById = (id) => {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(Products.find((product => { 
-                return product.id === id
-             })))
-        },2000)
-    })
+    return generatePromise(Products.find(product => product.id === id))
 }

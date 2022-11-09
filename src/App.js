@@ -1,15 +1,20 @@
 import React from 'react';
 import Header from './components/Header/Header'
 import Main from './components/Main/Main';
-import {BrowserRouter} from "react-router-dom"
+import { BrowserRouter } from "react-router-dom"
+import {CustomProvider} from './components/CustomProvider/CustomProvider';
+
+
 
 function App() {
+
   return (
-    // Move Search and NavBar to a single Header component
-    <BrowserRouter>
-      <Header />
-      <Main />
-    </BrowserRouter>
+    <CustomProvider>
+      <BrowserRouter>
+        <Header />
+        <Main />
+      </BrowserRouter>
+    </CustomProvider>
   )
 }
 

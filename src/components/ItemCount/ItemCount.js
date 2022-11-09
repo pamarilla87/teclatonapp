@@ -2,13 +2,11 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './ItemCount.css'
 import { Button, Form, } from 'react-bootstrap'
-import { useState } from 'react'
 
-const ItemCount = ({stock}) => {
-    const [count, setCount] = useState(0);
+const ItemCount = ({stock, count, setCount}) => {
 
     const handleDecrement = () => {
-        if (count > 0) {
+        if (count > 1) {
             setCount(count - 1)   
         }
     }
@@ -20,14 +18,12 @@ const ItemCount = ({stock}) => {
 
 
     return (
-        <>
             <Form.Group className="cart-input">
                 <Button onClick={handleDecrement} className="decreaseButton" variant="primary">-</Button>
                 <span className="numberOfItems">{count}</span>
                 <Button onClick={handleIncrement} className="increaseButton" variant="primary">+</Button>
             </Form.Group>
-            <Button  className="botonAgregar">Agregar al carrito</Button>
-        </>
+            
     )
 }
 

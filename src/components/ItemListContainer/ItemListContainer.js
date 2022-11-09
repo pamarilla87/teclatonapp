@@ -17,12 +17,12 @@ const ItemListContainer = () => {
         setProductos([])
         if (catId) {
             fetchProductsByCat(catId)
-            .then (res => setProductos(res))
+            .then (res => {setProductos(res)})
         }
 
         else {
             fetchProducts()
-                .then(resultado => setProductos(resultado))
+                .then(resultado => {setProductos(resultado)})
 
         }
     }, [catId])
