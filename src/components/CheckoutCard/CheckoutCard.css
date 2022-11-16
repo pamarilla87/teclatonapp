@@ -1,0 +1,22 @@
+@font-face {
+    font-family: pros-nova;
+    src: url(../../fonts/Proxima-Nova.otf);
+}
+
+main {
+    display: flex;
+    text-align: center !important;
+    font-family: pros-nova;
+}
+
+.card__Row {
+    align-items: center ;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.col > img {
+    max-width: 40%;
+    max-height: auto;
+}
+

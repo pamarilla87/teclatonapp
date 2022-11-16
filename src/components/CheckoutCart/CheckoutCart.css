@@ -1,0 +1,19 @@
+.chCard__Container {
+    margin: 1rem 2rem;
+    min-height: 100% ;
+    background-color: white;
+    border-radius: 1rem;
+    color: #333333E6;
+}
+
+body {
+    height: 100% !important;
+}
+
+.chCard_Row {
+    font-weight: bold;
+}
+
+.overStrike {
+    border-top: 3px solid #333333E6;
+}

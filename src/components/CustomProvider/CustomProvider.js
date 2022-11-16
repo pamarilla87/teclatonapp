@@ -1,4 +1,7 @@
 import React, { createContext, useState, useEffect } from 'react'
+import {toast} from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const customContext = createContext()
 const { Provider } = customContext
@@ -11,6 +14,31 @@ export const CustomProvider = ({children}) => {
         console.table(carrito)
     }, [carrito]) 
 
+    const successToast = (message) => {
+        toast.success(message, {
+            position: "top-right",
+            autoClose: 1000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            });
+    }
+
+    const failedToast = (message) => {
+        toast.error(message, {
+            position: "top-right",
+            autoClose: 1000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            });
+    }
 
     const addProductToCart = (product, number) => {
         const inCart = carrito.find((productInCart) => productInCart.id === product.id)
@@ -23,6 +51,7 @@ export const CustomProvider = ({children}) => {
         } else {
             setCarrito ([...carrito, {...product, amount: number}])
         }
+        successToast('Producto/s agregado/s!')
     }
 
     const updateProductFromCart = (product) => {

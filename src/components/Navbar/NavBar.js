@@ -33,7 +33,7 @@ const NavBar = (props) => {
                                 <Nav.Link as={Link} to="/" >Hola {nombre}!</Nav.Link>
                                 <Nav.Link as={Link} to="/my-purchases" >Mis Compras</Nav.Link>
                                 <Nav.Link as={Link} to="/favs" >Favoritos</Nav.Link>
-                                <Nav.Link as={Link} to="/cart" > <CartWidget productos="4"/> </Nav.Link>
+                                <Nav.Link as={Link} to="/checkout" > <CartWidget productos="4"/> </Nav.Link>
                             </Nav>
                         </Col>
                     </Row>

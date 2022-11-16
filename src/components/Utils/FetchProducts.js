@@ -17,3 +17,17 @@ export const fetchProductsByCat = (cat) => {
 export const fetchProductsById = (id) => {
     return generatePromise(Products.find(product => product.id === id))
 }
+
+export const fetchProductsInCart = (carrito) => {
+    return generatePromise(carrito)
+}
+
+export const formatNumber = (q) => {
+    return new Intl.NumberFormat("en-US").format(q)
+}
+
+export const cartTotal = (products) => {
+    return products.reduce((total, sub) => {
+        return total + sub.amount * sub.price
+    }, 0)
+}

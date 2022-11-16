@@ -5,6 +5,7 @@ import UnderConstruction from '../UnderConstruction/UnderConstruction'
 import NotFound from '../NotFound/NotFound'
 import {Route, Routes} from "react-router-dom"
 import "./Main.css"
+import CheckoutCart from '../CheckoutCart/CheckoutCart'
 
 const Main = () => {
   return (
@@ -21,6 +22,7 @@ const Main = () => {
             <Route path='/help' element={<UnderConstruction />} />
             <Route path='/categories/:catId' element={<ItemListContainer />} />
             <Route path='/item/:itemId' element={<ItemDetailContainer />} />
+            <Route path='/checkout' element= {<CheckoutCart />}/>
             <Route path='*' element={<NotFound />} />
         </Routes>
     </main>

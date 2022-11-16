@@ -3,6 +3,7 @@ import './ItemCard.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Link} from "react-router-dom"
 import { Card, Col, Button } from 'react-bootstrap'
+import { formatNumber } from '../Utils/FetchProducts'
 
 
 const CardItem = ({id, description, price, stock, img}) => {
@@ -13,7 +14,7 @@ const CardItem = ({id, description, price, stock, img}) => {
                 <Card style={{width: '12rem'}} className="cardContainer"  >
                     <Card.Img variant="top" src={img} />
                     <Card.Body>
-                        <Card.Title>$ {price}</Card.Title>
+                        <Card.Title>$ {formatNumber(price)}</Card.Title>
                         <Card.Text>{description}</Card.Text>
                         <Button as={Link} to={"../item/" + id} className="botonVer">Ver Detalles</Button>
                     </Card.Body>
