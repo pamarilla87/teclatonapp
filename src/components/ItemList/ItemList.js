@@ -3,7 +3,6 @@ import { Row } from 'react-bootstrap'
 import CardItem from '../ItemCard/ItemCard'
 
 export const ItemList = ({products}) => {
-
     return (
         <Row>
             {

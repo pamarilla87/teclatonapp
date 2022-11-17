@@ -1,4 +1,6 @@
-import Products from "../Utils/ProductList.json"
+import { db } from "../Firebase";
+import { getDocs, collection, where, query, getDoc, doc } from "firebase/firestore";
+
 
 export const generatePromise = (task, time = 2000) => {
     return new Promise((resolve, reject) => {
@@ -6,16 +8,6 @@ export const generatePromise = (task, time = 2000) => {
             resolve(task)
         }, time)
     })
-}
-
-export const fetchProducts = () => generatePromise(Products)
-
-export const fetchProductsByCat = (cat) => {
-    return generatePromise(Products.filter(product => product.categories === cat))
-}
-
-export const fetchProductsById = (id) => {
-    return generatePromise(Products.find(product => product.id === id))
 }
 
 export const fetchProductsInCart = (carrito) => {
@@ -30,4 +22,18 @@ export const cartTotal = (products) => {
     return products.reduce((total, sub) => {
         return total + sub.amount * sub.price
     }, 0)
+}
+
+
+export const fetchProductsByCategory = (catId) => {
+    const productsCollection = collection(db, "productos")
+    const filtro = (typeof catId === 'undefined') ? query(productsCollection, where("categories", "!=", '')) : query(productsCollection, where("categories", "==", catId))
+    return getDocs(filtro)
+}
+
+export const fetchProductsByIds = (id) => {
+    const productsCollection = collection(db, "productos")
+    const refe = doc(productsCollection, id) 
+    return getDoc(refe)
+
 }

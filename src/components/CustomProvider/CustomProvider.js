@@ -10,9 +10,9 @@ export const CustomProvider = ({children}) => {
     const [carrito, setCarrito] = useState([])
     const [count, setCount] = useState(0);
     
-    useEffect(() => {
-        console.table(carrito)
-    }, [carrito]) 
+    // useEffect(() => {
+    //     console.table(carrito)
+    // }, [carrito]) 
 
     const successToast = (message) => {
         toast.success(message, {
@@ -54,7 +54,7 @@ export const CustomProvider = ({children}) => {
         successToast('Producto/s agregado/s!')
     }
 
-    const updateProductFromCart = (product) => {
+    const removeProductFromCart = (product) => {
         const inCart = carrito.find((productInCart) => productInCart.id === product.id)
         if (inCart.amount === 1) {
             setCarrito(carrito.filter((productInCart) => productInCart.id !== product.id))
@@ -70,7 +70,7 @@ export const CustomProvider = ({children}) => {
 
 
     return (
-        <Provider value={{carrito, updateProductFromCart, addProductToCart, count, setCount }}>
+        <Provider value={{carrito, removeProductFromCart, addProductToCart, count, setCount }}>
             {children}
         </Provider>
     )

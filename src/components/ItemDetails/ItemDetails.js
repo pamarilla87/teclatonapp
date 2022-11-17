@@ -9,7 +9,6 @@ const ItemDetails = ({ product }) => {
 
     const {addProductToCart, count} = useContext(customContext)
 
-
     return (
         <Row className="justify-content-md-center" >
             <Col className="itemsCols">
