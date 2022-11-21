@@ -1,18 +1,16 @@
-import React, { createContext, useState, useEffect } from 'react'
-import {toast} from "react-toastify"
+import React, { createContext, useState } from 'react'
+import { toast } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
 
 
 const customContext = createContext()
 const { Provider } = customContext
 
-export const CustomProvider = ({children}) => {
+export const CustomProvider = ({ children }) => {
     const [carrito, setCarrito] = useState([])
     const [count, setCount] = useState(0);
-    
-    // useEffect(() => {
-    //     console.table(carrito)
-    // }, [carrito]) 
+    const [customer, setCustomer] = useState({})
+    const [orderId, setOrderId] = useState('')
 
     const successToast = (message) => {
         toast.success(message, {
@@ -24,7 +22,7 @@ export const CustomProvider = ({children}) => {
             draggable: true,
             progress: undefined,
             theme: "colored",
-            });
+        });
     }
 
     const failedToast = (message) => {
@@ -37,7 +35,7 @@ export const CustomProvider = ({children}) => {
             draggable: true,
             progress: undefined,
             theme: "colored",
-            });
+        });
     }
 
     const addProductToCart = (product, number) => {
@@ -45,11 +43,11 @@ export const CustomProvider = ({children}) => {
         if (inCart) {
             setCarrito(carrito.map((productInCart) => {
                 if (productInCart.id === product.id) {
-                    return { ...inCart, amount: inCart.amount + number}
+                    return { ...inCart, amount: inCart.amount + number }
                 } else return productInCart
             }))
         } else {
-            setCarrito ([...carrito, {...product, amount: number}])
+            setCarrito([...carrito, { ...product, amount: number }])
         }
         successToast('Producto/s agregado/s!')
     }
@@ -61,16 +59,28 @@ export const CustomProvider = ({children}) => {
         } else {
             setCarrito((productInCart) => {
                 if (productInCart.id === product.id) {
-                    return {...inCart, amount: inCart.amount - 1}
+                    return { ...inCart, amount: inCart.amount - 1 }
                 } else return productInCart
             })
         }
+        failedToast('Producto/s removido/s!')
+    }
+
+    const removeAllProductFromCart = (product) => {
+        const inCart = carrito.find((productInCart) => productInCart.id === product.id)
+        if (inCart) {
+            setCarrito(carrito.filter((productInCart) => productInCart.id !== product.id))
+        }
+        failedToast('Producto/s removido/s!')
+    }
+
+    const emptyCart = () => {
+        setCarrito([])
     }
 
 
-
     return (
-        <Provider value={{carrito, removeProductFromCart, addProductToCart, count, setCount }}>
+        <Provider value={{ carrito, removeProductFromCart, addProductToCart, count, setCount, removeAllProductFromCart, emptyCart, customer, setCustomer, orderId, setOrderId }}>
             {children}
         </Provider>
     )

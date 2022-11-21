@@ -1,13 +1,15 @@
 import React, { useContext, useState, useEffect } from 'react'
 import customContext from '../CustomProvider/CustomProvider'
-import { Row, Container, Col } from 'react-bootstrap'
-import CheckoutCard from '../CheckoutCard/CheckoutCard'
+import { Row, Container, Col, Button } from 'react-bootstrap'
+import CheckoutCardItem from '../CheckoutCardItem/CheckoutCardItem'
 import { fetchProductsInCart, cartTotal, formatNumber } from '../Utils/FetchProducts'
 import LoadingScreen from '../LoadingScreen/LoadingScreen'
-import './CheckoutCart.css'
+import {Link} from "react-router-dom"
+import './CartOverview.css'
 
-const CheckoutCart = () => {
-    const { carrito } = useContext(customContext)
+const CartOverview = () => {
+    const { emptyCart, carrito } = useContext(customContext)
+    
 
     const [productos, setProductos] = useState([])
 
@@ -31,14 +33,21 @@ const CheckoutCart = () => {
                 {
                     productos.map(product => {
                         return (
-                            <CheckoutCard key={product.id} {...product} />
+                            <CheckoutCardItem key={product.id} {...product} />
                         )
                     })
                 }
                 <Row className='chCard_Row'>
-                    <Col  sm={{span: 3, offset: 6}}>TOTAL: </Col>
+                    <Col sm={{ span: 3, offset: 6 }}>TOTAL: </Col>
                     <Col className='overStrike'>
-                       $ {formatNumber(cartTotal(productos))}
+                        $ {formatNumber(cartTotal(productos))}
+                    </Col>
+                </Row>
+
+                <Row>
+                    <Col sm={{ span: 3, offset: 9 }}>
+                        <Button onClick={() => {emptyCart()}} className='chButton'>Vaciar carrito</Button>
+                        <Button as={Link} to="/checkout" className='chButton'>Continuar</Button>
                     </Col>
                 </Row>
             </Container>
@@ -46,4 +55,4 @@ const CheckoutCart = () => {
     }
 }
 
-export default CheckoutCart
+export default CartOverview

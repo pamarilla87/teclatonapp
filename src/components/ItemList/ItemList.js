@@ -1,6 +1,6 @@
 import {React} from 'react';
 import { Row } from 'react-bootstrap'
-import CardItem from '../ItemCard/ItemCard'
+import ItemCard from '../ItemCard/ItemCard'
 
 export const ItemList = ({products}) => {
     return (
@@ -8,7 +8,7 @@ export const ItemList = ({products}) => {
             {
                 products.map(product => {
                     return ( 
-                        <CardItem key={product.id} {...product} />
+                        <ItemCard key={product.id} {...product} />
                     )
                 })
             }

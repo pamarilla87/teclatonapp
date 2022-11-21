@@ -17,3 +17,7 @@ body {
 .overStrike {
     border-top: 3px solid #333333E6;
 }
+
+.chButton {
+    margin: 1rem;
+}

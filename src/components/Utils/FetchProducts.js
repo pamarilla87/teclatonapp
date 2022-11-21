@@ -1,5 +1,5 @@
 import { db } from "../Firebase";
-import { getDocs, collection, where, query, getDoc, doc } from "firebase/firestore";
+import { getDocs, collection, where, query, getDoc, doc, addDoc, serverTimestamp   } from "firebase/firestore";
 
 
 export const generatePromise = (task, time = 2000) => {
@@ -24,7 +24,6 @@ export const cartTotal = (products) => {
     }, 0)
 }
 
-
 export const fetchProductsByCategory = (catId) => {
     const productsCollection = collection(db, "productos")
     const filtro = (typeof catId === 'undefined') ? query(productsCollection, where("categories", "!=", '')) : query(productsCollection, where("categories", "==", catId))
@@ -35,5 +34,31 @@ export const fetchProductsByIds = (id) => {
     const productsCollection = collection(db, "productos")
     const refe = doc(productsCollection, id) 
     return getDoc(refe)
+
+}
+
+// export const submitOrder = (customer, cart) => {
+//     const newCart = cart.map(({stock, img, categories, ...rest}) => rest)
+//     const orden = {
+//         buyer: customer,
+//         products: newCart,
+//         orderTotal: cartTotal(cart),
+//         date: serverTimestamp()        
+//     }
+//     const ordersCollection = collection(db, "orders")
+//     return addDoc(ordersCollection,orden)
+
+// }
+
+export const submitOrder = (customer, cart) => {
+    const newCart = cart.map(({stock, img, categories, ...rest}) => rest)
+    const orden = {
+        buyer: customer,
+        products: newCart,
+        orderTotal: cartTotal(cart),
+        date: serverTimestamp()        
+    }
+    const ordersCollection = collection(db, "orders")
+    return addDoc(ordersCollection,orden)
 
 }

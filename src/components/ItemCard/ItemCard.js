@@ -6,7 +6,7 @@ import { Card, Col, Button } from 'react-bootstrap'
 import { formatNumber } from '../Utils/FetchProducts'
 
 
-const CardItem = ({id, description, price, stock, img}) => {
+const ItemCard = ({id, description, price, stock, img}) => {
 
     return (
         <Col xs={12} md={6} lg={3} xxl={2} className="itemsCols">
@@ -24,4 +24,4 @@ const CardItem = ({id, description, price, stock, img}) => {
     )
 }
 
-export default CardItem
+export default ItemCard

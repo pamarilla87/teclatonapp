@@ -1,10 +1,10 @@
 import React from 'react'
 import { Col, Row, Image } from 'react-bootstrap'
 import { formatNumber } from '../Utils/FetchProducts'
-import './CheckoutCard.css'
+import './CheckoutCardItem.css'
 
 
-const CheckoutCard = ({ id, description, price, stock, img, amount }) => {
+const CheckoutCardItem = ({ id, description, price, stock, img, amount }) => {
   return (
       <Row className = 'card__Row'>
             <Col className>
@@ -19,4 +19,4 @@ const CheckoutCard = ({ id, description, price, stock, img, amount }) => {
   )
 }
 
-export default CheckoutCard
+export default CheckoutCardItem
