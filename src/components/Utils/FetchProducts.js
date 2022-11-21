@@ -37,19 +37,6 @@ export const fetchProductsByIds = (id) => {
 
 }
 
-// export const submitOrder = (customer, cart) => {
-//     const newCart = cart.map(({stock, img, categories, ...rest}) => rest)
-//     const orden = {
-//         buyer: customer,
-//         products: newCart,
-//         orderTotal: cartTotal(cart),
-//         date: serverTimestamp()        
-//     }
-//     const ordersCollection = collection(db, "orders")
-//     return addDoc(ordersCollection,orden)
-
-// }
-
 export const submitOrder = (customer, cart) => {
     const newCart = cart.map(({stock, img, categories, ...rest}) => rest)
     const orden = {
