@@ -26,7 +26,7 @@ const ItemListContainer = () => {
 
     return (
         <Container className="itemsContainer"> {
-            productos?.length <= 0 ? <LoadingScreen /> : <ItemList products={productos} />
+            productos?.length <= 0 ? <LoadingScreen message={'productos'} /> : <ItemList products={productos} />
         }
         </Container>
     )
