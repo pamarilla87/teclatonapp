@@ -9,15 +9,15 @@ import "./ItemDetailContainer.css"
 
 const ItemDetailContainer = () => {
 
-    const [producto, setProductos] = useState([])
+    const [producto, setProducto] = useState()
 
     const { itemId } = useParams()
 
     useEffect(() => {
         fetchProductsByIds(itemId)
             .then((resultado) => {
-                const productos = {...resultado.data(), id: itemId}
-                setProductos(productos)
+                const productos = { ...resultado.data(), id: itemId }
+                setProducto(productos)                
             })
             .catch((error) => {
                 console.log(error)
@@ -27,11 +27,13 @@ const ItemDetailContainer = () => {
 
 
     return (
-        <Container className="itemsDetContainer">
-            {
-                producto?.length <= 0 ? <LoadingScreen /> : <ItemDetails product={producto} />
-            }
-        </Container>
+        !producto ? <LoadingScreen message='producto' /> : Object.keys(producto).length <= 1 ? <h1>El producto seleccionado no existe</h1> :
+            (
+                
+                <Container className="itemsDetContainer">
+                    <ItemDetails product={producto} />
+                </Container>
+            )
     )
 }
 

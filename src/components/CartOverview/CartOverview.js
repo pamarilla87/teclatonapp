@@ -14,12 +14,17 @@ const CartOverview = () => {
 
     useEffect(() => {
         fetchProductsInCart(carrito)
-            .then(result => setProductos(result))
+            .then(result => {
+                setProductos(result)
+            })
+            .catch((error) => {
+                console.log(error)
+            })
 
     }, [productos, carrito])
 
     return (
-        !productos ? <LoadingScreen message={'carrito'} /> : !productos[0] ? <h1> No hay ningún producto en el carrito  </h1> :
+        !productos ? <LoadingScreen message={'carrito'} /> : !productos.length>0 ? <h1> No hay ningún producto en el carrito  </h1> :
             (
                 <Container fluid className='chCard__Container'>
                     <Row className='chCard_Row'>
@@ -28,7 +33,6 @@ const CartOverview = () => {
                         <Col>Cantidad</Col>
                         <Col>Total</Col>
                     </Row>
-                    {console.log(productos)}
                     {
                         
                         productos.map(product => {
