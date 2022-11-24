@@ -9,8 +9,6 @@ const { Provider } = customContext
 export const CustomProvider = ({ children }) => {
     const [carrito, setCarrito] = useState([])
     const [count, setCount] = useState(0);
-    // const [customer, setCustomer] = useState({})
-    // const [orderId, setOrderId] = useState('')
 
     const successToast = (message) => {
         toast.success(message, {

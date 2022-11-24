@@ -11,7 +11,6 @@ import './NavBar.css'
 const NavBar = (props) => {
     const {nombre="Invitado"} = props
     return (
-        <>
             <Container fluid id="cont-reset-side-pad">
                     <Row id="row-navbar-styles">
                         <Col md={12} xl={7}>
@@ -38,7 +37,6 @@ const NavBar = (props) => {
                         </Col>
                     </Row>
             </Container>
-        </>
     )
 }
 

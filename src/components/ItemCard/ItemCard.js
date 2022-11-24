@@ -1,6 +1,5 @@
 import React from 'react'
 import './ItemCard.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import {Link} from "react-router-dom"
 import { Card, Col, Button } from 'react-bootstrap'
 import { formatNumber } from '../Utils/FetchProducts'
