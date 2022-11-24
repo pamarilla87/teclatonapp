@@ -49,7 +49,7 @@ const Checkout = () => {
             <Form noValidate  onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="formNames">
                 <Form.Label>Nombre y Apellido</Form.Label>
-                <Form.Control required ref={refName} type="text" placeholder="Ingrese su nombre y apellido" required />
+                <Form.Control required ref={refName} type="text" placeholder="Ingrese su nombre y apellido" />
               </Form.Group>
 
               <Form.Group className="mb-3 mt-3" controlId="formEmail">
